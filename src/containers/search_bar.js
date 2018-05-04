@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from 'redux'
 import { fetchWeather } from '../actions/index'
 
 class SearchBar extends Component {
@@ -44,5 +44,5 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchWeather }, dispatch)
 }
 
-// null because we don't need any stage here.
+// null because we don't need any state here.
 export default connect(null, mapDispatchToProps)(SearchBar)
